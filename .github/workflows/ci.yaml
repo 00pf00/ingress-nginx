@@ -26,7 +26,7 @@ jobs:
     steps:
 
       - name: Checkout
-        uses: actions/checkout@629c2de402a417ea7690ca6ce3f33229e27606a5 # v2
+        uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # v2
 
       - uses: dorny/paths-filter@b2feaf19c27470162a626bd6fa8438ae5b263721 # v2
         id: filter
@@ -49,7 +49,7 @@ jobs:
     steps:
 
       - name: Checkout
-        uses: actions/checkout@629c2de402a417ea7690ca6ce3f33229e27606a5 # v2
+        uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # v2
 
       - name: Run Gosec Security Scanner
         uses: securego/gosec@b99b5f7838e43a4104354ad92a6a1774302ee1f9 # master
@@ -67,7 +67,7 @@ jobs:
     steps:
 
       - name: Checkout
-        uses: actions/checkout@629c2de402a417ea7690ca6ce3f33229e27606a5 # v2
+        uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # v2
 
       - name: Set up Go 1.18
         id: go
@@ -128,7 +128,7 @@ jobs:
     steps:
 
       - name: Checkout
-        uses: actions/checkout@629c2de402a417ea7690ca6ce3f33229e27606a5 # v2
+        uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # v2
 
       - name: Setup Go
         uses: actions/setup-go@b22fbbc2921299758641fab08929b4ac52b32923 # v2
@@ -209,7 +209,7 @@ jobs:
     steps:
 
       - name: Checkout
-        uses: actions/checkout@629c2de402a417ea7690ca6ce3f33229e27606a5 # v2
+        uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # v2
 
       - name: cache
         uses: actions/download-artifact@fb598a63ae348fa914e94cd0ff38f362e927b741 # v2
@@ -267,7 +267,7 @@ jobs:
     steps:
 
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
 
       - name: cache
         uses: actions/download-artifact@fb598a63ae348fa914e94cd0ff38f362e927b741
@@ -319,7 +319,7 @@ jobs:
       PLATFORMS: linux/amd64,linux/arm64
     steps:
       - name: Checkout
-        uses: actions/checkout@629c2de402a417ea7690ca6ce3f33229e27606a5 # v2
+        uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # v2
 
       - uses: dorny/paths-filter@b2feaf19c27470162a626bd6fa8438ae5b263721 # v2
         id: filter-images
@@ -385,7 +385,7 @@ jobs:
       PLATFORMS: linux/amd64
     steps:
       - name: Checkout
-        uses: actions/checkout@629c2de402a417ea7690ca6ce3f33229e27606a5 # v2
+        uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # v2
 
       - uses: dorny/paths-filter@b2feaf19c27470162a626bd6fa8438ae5b263721 # v2
         id: filter-images
